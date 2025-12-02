@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Contact Form
+    </title>
+
+    <style>
+        form {
+            background-color: pink;
+        }
+        input[type=email],[type=tel]{
+            width: 50%;
+            padding: 8px;
+            border: 3px;
+
+            
+            border: solid;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <img src="https://png.pngtree.com/png-clipart/20250703/original/pngtree-pizza-logo-transparent-image-free-for-online-download-png-image_21265162.png" width="500">
+    </div>
+    <hr>
+    <form action="https://www.w3schools.com/action_page.php" method="post" >
+        <fieldset>
+            <legend>Contact Info</legend>
+            <p><label>Telephone: <input type=tel name = 'telephone' required pattern="[0-9]{10}" maxlength="10"  placeholder="1234567890" autocomplete="tel-national"></label></p>
+            <p><label>Email address: <input type=email name = 'email' autocomplete="email"></label></label></p>
+            </fieldset>
+        <fieldset>
+            <legend>Pizza Size </legend>
+            <p><label><input type=radio name=size value='small' required>Small</label></p>
+            <p><label><input type=radio name=size value='medium' required checked>Medium</label></p>
+            <p><label><input type=radio name=size value = 'large' required>Large</label></p>
+        </fieldset>    
+        <fieldset>
+            <legend>Pizza Toppings</legend>
+            <p><label> <input type="checkbox" name="bacon">Bacon</label></p>
+            <p><label> <input type="checkbox" name="extra_cheese">Extra Cheese</label></p>
+            <p><label> <input type="checkbox" name="onion">Onion</label></p>
+            <p><label> <input type="checkbox" name="mushroom">Mushroom</label></p>
+        </fieldset>
+        <p><label>Preferred delivery time: <input type=time min="11:00" max='21:00' name="time"></label></p>
+        <p><label>Delivery instuctions: <textarea name="comment"></textarea></label></p>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
