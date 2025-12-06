@@ -1,0 +1,57 @@
+table {
+    border: solid;
+    height: 50px;
+    width: 20px;
+    text-align: center;
+    font-weight: bold;
+    background-color: antiquewhite;
+    /* table-layout:fixed; */
+    overflow: hidden;
+}
+#main_display {
+        text-align: right; 
+        height: 50px;
+        border: solid;
+        font-size: 40px;
+        max-width: 320px;
+        overflow: hidden;
+}
+#secondary_display {
+        text-align: right; 
+        height: 30px;
+        border: none;
+        font-size: medium;
+        font-weight: 500;
+        max-width: 240px;
+        overflow: hidden;
+}
+button {
+    height: 80px;
+    width: 80px;
+    font-size: 50px;
+    border-radius: 50%;
+    box-shadow: -3px 3px rgb(184, 162, 135);
+    border: 1px solid rgb(184, 162, 135);
+}
+
+button:hover{
+    background-color: lightgray;
+}
+
+.memory_button {
+    font-size: 40px;
+}
+
+#b_result{
+    background-color: lightcoral;
+}
+
+#b_result:hover{
+    background-color: orangered;
+}
+.operator {
+    background-color: lightcyan;
+}
+.operator:hover {
+    background-color: skyblue;
+}

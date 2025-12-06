@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        My Calculator
+    </title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="calculator.js"></script>
+     
+</head>
+
+<body>
+    <div>
+        <table>
+            <tr>
+                <td id ="secondary_display" colspan="3">
+                </td>
+                <td id ="op_display">
+
+                </td>
+
+            <tr>
+                <td id ="main_display" colspan="4">
+                </td>
+            </tr>
+            <tr>
+                <td><button id="b_mem_store" class="memory_button" >MS</button></td>
+                <td><button id="b_mem_recall" class="memory_button" >MR</button></td>
+                <td><button id="b_clear" onclick="clearDisplay()">C</button></td>
+                <td><button id="b_division" class="operator" onclick="setOperator('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button id="b_7" onclick="appendNumber('7')">7</button></td>
+                <td><button id="b_8" onclick="appendNumber('8')">8</button></td>
+                <td><button id="b_9" onclick="appendNumber('9')">9</button></td>
+                <td><button id="b_multiplication" class="operator" onclick="setOperator('*')">∗</button></td>
+            </tr>
+            <tr>
+                <td><button id="b_4" onclick="appendNumber('4')">4</button></td>
+                <td><button id="b_5" onclick="appendNumber('5')">5</button></td>
+                <td><button id="b_6" onclick="appendNumber('6')">6</button></td>
+                <td><button id="b_subtraction" class="operator" onclick="setOperator('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button id="b_1"  onclick="appendNumber('1')">1</button></td>
+                <td><button id="b_2" onclick="appendNumber('2')">2</button></td>
+                <td><button id="b_3" onclick="appendNumber('3')">3</button></td>
+                <td><button id="b_addition" class="operator" onclick="setOperator('+')">+</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button id="b_0" onclick="appendNumber('0')">0</button></td>
+                <td><button id="b_point" onclick="appendNumber('.')">.</button></td>
+                <td><button id="b_result" onclick="calculate()">=</button></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        document.getElementById("b_mem_store").addEventListener("click", memoryStore());
+        document.getElementById("b_mem_recall").addEventListener("click", memoryRecall());
+    </script>
+</body>
